@@ -1,0 +1,44 @@
+SF:/Users/juliendudek/C#/Fibonacci/src/Fibonacci/Fibo.cs
+FN:19,System.Collections.Generic.List`1<System.Threading.Tasks.Task`1<System.Int32>> Fibonacci.Compute::RunFibonaccis(System.String[])
+FNDA:0,System.Collections.Generic.List`1<System.Threading.Tasks.Task`1<System.Int32>> Fibonacci.Compute::RunFibonaccis(System.String[])
+DA:20,0
+DA:28,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:36,0
+DA:37,0
+BRDA:30,68,1,0
+BRDA:30,68,0,0
+FN:21,System.Int32 Fibonacci.Compute::<RunFibonaccis>g__Fib|1_0(System.Int32)
+FNDA:0,System.Int32 Fibonacci.Compute::<RunFibonaccis>g__Fib|1_0(System.Int32)
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+BRDA:24,10,1,0
+BRDA:24,10,0,0
+FN:6,System.Void Fibonacci.Compute/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void Fibonacci.Compute/<ExecuteAsync>d__0::MoveNext()
+DA:7,0
+DA:8,0
+DA:9,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:17,0
+DA:18,0
+BRDA:11,242,1,0
+BRDA:11,242,0,0
+LF:24
+LH:0
+BRF:6
+BRH:0
+FNF:3
+FNH:0
+end_of_record

@@ -1,0 +1,100 @@
+{
+  "Fibonacci.dll": {
+    "/Users/juliendudek/C#/Fibonacci/src/Fibonacci/Fibo.cs": {
+      "Fibonacci.Compute": {
+        "System.Collections.Generic.List`1<System.Threading.Tasks.Task`1<System.Int32>> Fibonacci.Compute::RunFibonaccis(System.String[])": {
+          "Lines": {
+            "20": 0,
+            "28": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "36": 0,
+            "37": 0
+          },
+          "Branches": [
+            {
+              "Line": 30,
+              "Offset": 68,
+              "EndOffset": 15,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 68,
+              "EndOffset": 70,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 Fibonacci.Compute::<RunFibonaccis>g__Fib|1_0(System.Int32)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 10,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 10,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Fibonacci.Compute/<ExecuteAsync>d__0": {
+        "System.Void Fibonacci.Compute/<ExecuteAsync>d__0::MoveNext()": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 242,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 242,
+              "EndOffset": 247,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}
