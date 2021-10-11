@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RSnHbEgFhx+usYCg0K3XiVdq/OtOkzibXf82hqdOlKkYd3cO1lulCYKQ6iOND74arCdnq18BrBYK/n6yJ6wH4w==",
+  "dgSpecHash": "mqi21ie06YoWf4Qag1jV7nCTm7ORhHP2U89FWUpQzwSI5bJvDb5s9Vqz1GRniGNj4bocTracOeU5qir5xufUTQ==",
   "success": true,
   "projectFilePath": "/Users/juliendudek/C#/dotnet-fibonacci/tests/Fibonacci.Tests/Fibonacci.Tests.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "/Users/juliendudek/.nuget/packages/microsoft.entityframeworkcore/5.0.10/microsoft.entityframeworkcore.5.0.10.nupkg.sha512",
     "/Users/juliendudek/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.10/microsoft.entityframeworkcore.abstractions.5.0.10.nupkg.sha512",
     "/Users/juliendudek/.nuget/packages/microsoft.entityframeworkcore.analyzers/5.0.10/microsoft.entityframeworkcore.analyzers.5.0.10.nupkg.sha512",
+    "/Users/juliendudek/.nuget/packages/microsoft.entityframeworkcore.inmemory/5.0.10/microsoft.entityframeworkcore.inmemory.5.0.10.nupkg.sha512",
     "/Users/juliendudek/.nuget/packages/microsoft.entityframeworkcore.relational/5.0.10/microsoft.entityframeworkcore.relational.5.0.10.nupkg.sha512",
     "/Users/juliendudek/.nuget/packages/microsoft.entityframeworkcore.sqlserver/5.0.10/microsoft.entityframeworkcore.sqlserver.5.0.10.nupkg.sha512",
     "/Users/juliendudek/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
