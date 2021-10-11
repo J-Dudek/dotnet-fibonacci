@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Y1LRZK0ZbjYmhFTw4vXHbJPtv8XfLsFJ2vHT4A+5uG+kTsYZuc4dxzIy3asJI6/2CZ3DXAe95m2/aXmvndbYcA==",
+  "dgSpecHash": "gbiUH76lMv5JezS6RJYTrqK73XWmcRtZtVtvvwJlZ8eNa40z2o25D3WfAwYyU9MgztO2PfTP7ZWS17y3JB0JSw==",
   "success": true,
-  "projectFilePath": "/Users/juliendudek/C#/Fibonacci/src/Fibonacci.Web/Fibonacci.Web.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/juliendudek/C#/dotnet-fibonacci/src/Fibonacci.Web/Fibonacci.Web.csproj",
+  "expectedPackageFiles": [
+    "/Users/juliendudek/.nuget/packages/julien.dudek.fibonacci/1.0.0/julien.dudek.fibonacci.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

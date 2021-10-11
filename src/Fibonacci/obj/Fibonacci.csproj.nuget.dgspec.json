@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/juliendudek/C#/Fibonacci/src/Fibonacci/Fibonacci.csproj": {}
+    "/Users/juliendudek/C#/dotnet-fibonacci/src/Fibonacci/Fibonacci.csproj": {}
   },
   "projects": {
-    "/Users/juliendudek/C#/Fibonacci/src/Fibonacci/Fibonacci.csproj": {
+    "/Users/juliendudek/C#/dotnet-fibonacci/src/Fibonacci/Fibonacci.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/juliendudek/C#/Fibonacci/src/Fibonacci/Fibonacci.csproj",
-        "projectName": "Fibonacci",
-        "projectPath": "/Users/juliendudek/C#/Fibonacci/src/Fibonacci/Fibonacci.csproj",
+        "projectUniqueName": "/Users/juliendudek/C#/dotnet-fibonacci/src/Fibonacci/Fibonacci.csproj",
+        "projectName": "Julien.Dudek.Fibonacci",
+        "projectPath": "/Users/juliendudek/C#/dotnet-fibonacci/src/Fibonacci/Fibonacci.csproj",
         "packagesPath": "/Users/juliendudek/.nuget/packages/",
-        "outputPath": "/Users/juliendudek/C#/Fibonacci/src/Fibonacci/obj/",
+        "outputPath": "/Users/juliendudek/C#/dotnet-fibonacci/src/Fibonacci/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/juliendudek/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,18 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
