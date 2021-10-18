@@ -2,7 +2,9 @@
 using System.Diagnostics;
 using System.IO;
 using Fibonacci;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 
@@ -18,26 +20,32 @@ IConfiguration configuration = new ConfigurationBuilder()
 var applicationSection = configuration.GetSection("Application");
 var applicationConfig = applicationSection.Get<ApplicationConfig>();
 
-var loggerFactory = LoggerFactory.Create(builder =>
-    {
-        builder.AddConsole();
-    }
-);
-var logger = loggerFactory.CreateLogger("Demo.Program");
-logger.LogInformation($"Application Name : {applicationConfig.Name}");
-logger.LogInformation($"Application Message : {applicationConfig.Message}");
 
-Stopwatch stopwatch = new Stopwatch();
-stopwatch.Start();
 
-using var fibonacciDataContext = new FibonacciDataContext();
-var compute = new Compute(fibonacciDataContext);
-var tasks = await new Compute(fibonacciDataContext).ExecuteAsync(args);
-foreach (var task in tasks) Console.WriteLine($"Fibo result : {task}");
 
-stopwatch.Stop();
-Console.WriteLine($"{stopwatch.Elapsed.Seconds}s");
 
+//using var fibonacciDataContext = new FibonacciDataContext();
+var services = new ServiceCollection();
+services.AddTransient<Compute>();
+services.AddLogging(configure => configure.AddConsole());
+services.AddDbContext<FibonacciDataContext>(options =>
+    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
+using (var serviceProvider = services.BuildServiceProvider())
+{
+    var logger =serviceProvider.GetService<ILogger<Compute>>();
+    logger.LogError($"Application Name : {applicationConfig.Name}");
+    logger.LogInformation($"Application Message : {applicationConfig.Message}");
+
+
+    Stopwatch stopwatch = new();
+    stopwatch.Start();
+    var compute = serviceProvider.GetService<Compute>();
+    var tasks = await compute.ExecuteAsync(args);
+    foreach (var task in tasks) Console.WriteLine($"Fibo result : {task}");
+    stopwatch.Stop();
+    Console.WriteLine($"{stopwatch.Elapsed.Seconds}s");
+}
 
 public class ApplicationConfig
 {
