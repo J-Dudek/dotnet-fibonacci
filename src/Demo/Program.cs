@@ -20,10 +20,7 @@ var applicationConfig = applicationSection.Get<ApplicationConfig>();
 
 var loggerFactory = LoggerFactory.Create(builder =>
     {
-        builder.AddFilter("Microsoft", LogLevel.Warning)
-            .AddFilter("System", LogLevel.Warning)
-            .AddFilter("Demo", LogLevel.Debug)
-            .AddConsole();
+        builder.AddConsole();
     }
 );
 var logger = loggerFactory.CreateLogger("Demo.Program");
